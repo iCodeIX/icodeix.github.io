@@ -5,89 +5,215 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Win Services</title>
+    <!-- our project just needs Font Awesome Solid + Brands -->
+    <link href="./node_modules/@fortawesome/fontawesome-free/css/fontawesome.css" rel="stylesheet">
+    <link href="./node_modules/@fortawesome/fontawesome-free/css/brands.css" rel="stylesheet">
+    <link href="./node_modules/@fortawesome/fontawesome-free/css/solid.css" rel="stylesheet">
+    <title>Divider</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <main class="container-fluid d-flex h-100 flex-column">
-        <div class="row">
-            <nav class="navbar navbar-light bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand">Navbar</a>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+    <div class="main-container">
+        <div class="header">
+            <nav class="nav-list">
+                <div class="icon icon-close">
+                    <i class="fa-solid fa-xmark"></i>
                 </div>
+                <a href="#aboutMe">About me</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contacts">Contacts</a>
             </nav>
+            <div class="icon icon-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
-        <div class="row flex-grow-1" id="second-row">
-            <div class="col col-sm-2">
-                <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark h-100">
-                    <ul class="nav nav-pills flex-column mb-auto">
-                        <li class="nav-item">
-                            <a href="#home" class="nav-link active" aria-current="page">
-                
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#dashboard" class="nav-link text-white">
-                               
-                                Dashboard
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#others" class="nav-link text-white">
-                               
-                                Orders
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#products" class="nav-link text-white">
-                                
-                                Products
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#customers" class="nav-link text-white">
-                               
-                                Customers
-                            </a>
-                        </li>
-                    </ul>
-                    <hr>
-                    <div class="dropdown">
-                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
-                            id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://github.com/mdo.png" alt="" width="32" height="32"
-                                class="rounded-circle me-2">
-                            <strong>mdo</strong>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-                            <li><a class="dropdown-item" href="#">New project...</a></li>
-                            <li><a class="dropdown-item" href="#">Settings</a></li>
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Sign out</a></li>
-                        </ul>
+        <div class="top-container" id="topContainer">
+            <div class="spacer"></div>
+            <svg id="visual" viewBox="0 0 900 600" width="900" height="600" preserveAspectRatio="none"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                <rect x="0" y="0" width="900" height="600" fill="#191919"></rect>
+
+                <g transform="translate(922.8706092964965 -41.54716954378081)">
+                    <path id="first"
+                        d="M119.5 -143.1C177 -122.6 261.1 -117.4 275.6 -86.4C290.1 -55.3 234.9 1.5 195 44.5C155.1 87.5 130.5 116.6 100.5 163.6C70.5 210.7 35.3 275.9 -2.9 279.9C-41.1 284 -82.3 226.9 -141.7 189.4C-201.2 151.9 -278.9 133.9 -308.9 89.1C-338.9 44.4 -321.1 -27.1 -275.5 -65.4C-229.8 -103.6 -156.2 -108.7 -105.7 -131.4C-55.1 -154.2 -27.6 -194.6 1.7 -196.9C31 -199.3 61.9 -163.5 119.5 -143.1"
+                        fill="#7C3AF5"></path>
+                </g>
+
+                <g transform="translate(920.6581951296336 -56.89402319100739)">
+                    <path id="second"
+                        d="M104.2 -260.8C226.5 -127.2 130.1 -85.3 141.2 -46.9C152.3 -8.5 170.8 26.5 185.2 84.3C199.6 142.1 210 222.8 178.5 270.5C146.9 318.3 73.5 333.1 3.1 328.8C-67.2 324.5 -134.4 301 -179.1 257.5C-223.8 214 -246 150.6 -239.2 95.6C-232.4 40.7 -196.6 -5.8 -169.1 -44C-141.6 -82.3 -122.5 -112.3 -95.8 -144.5C-69 -176.6 -34.5 -210.8 3.2 -215.2C40.9 -219.7 81.9 -194.4 104.2 -160.8"
+                        fill="#7C3AF5" style="visibility: hidden;"></path>
+                </g>
+            </svg>
+
+
+            <div class="hero-page">
+                <div class="message-container">
+                    <div class="hero-message">
+                        I'm an aspiring <div class="hero-position">web developer</div>
                     </div>
+                    <div class="hero-sub-message">
+                        can transform designs to functional website.
+                    </div>
+                    <div class="about-me-btn">
+
+                        <a href="#contacts" class="about-me-label"><i class="fa-solid fa-paper-plane"></i>Contact
+                            me?</a>
+                    </div>
+
+                    <div class="cv-link">
+
+                        <a href="/files/sherwincarlos-cv.pdf" download>
+                            <i class="fa-solid fa-download"></i>Resume
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="section about-me" id="aboutMe">
+            <div class="spacer"></div>
+            <div class="section-title">About me</div>
+            <div class="pic-bio-container">
+                <div class="hero-img-container">
+                    <img src="images/heroimage.JPG" alt="sherwin image" />
+                </div>
+                <div class="hero-about">
+                    <p class="hero-about-msg">Sherwin here; you may call me Win if you want. Programming is a hobby of
+                        mine.
+                        I always played the leader and programmer in college. To my tasks, I devote a lot of
+                        responsibility,
+                        punctuality, and
+                        organization. I make care to finish everything before the due day. I also like imparting my
+                        skills,
+                        particularly in the area of programming. I have a strong interest for web development since I
+                        see it
+                        as a brand-new universe where everything
+                        may be readily illustrated and showcased.</p>
                 </div>
             </div>
 
-
-
-            <div class="col col-sm-10">b</div>
         </div>
-    </main>
+        <div class="section skills" id="skills">
+            <div class="spacer"></div>
+            <div class="section-title">Skills</div>
+            <ul class="skills-list">
+                <li class="card skill-item"><i class="skill-icon fa-brands fa-square-js"></i>
+                    <div class="skill-label">Javascript</div>
+                </li>
+                <li class="card skill-item"><i class="skill-icon fa-brands fa-html5"></i>
+                    <div class="skill-label">Html5</div>
+                </li>
+                <li class="card skill-item"><i class="skill-icon fa-brands fa-css3-alt"></i>
+                    <div class="skill-label">CSS3</div>
+                </li>
+                <li class="card skill-item"><i class="skill-icon fa-brands fa-java"></i>
+                    <div class="skill-label">Java</div>
+                </li>
+                <li class="card skill-item"><i class="skill-icon fa-solid fa-database"></i>
+                    <div class="skill-label">MySql</div>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="section projects" id="projects">
+            <div class="spacer"></div>
+            <div class="section-title">Projects</div>
+            <ul class="projects-list">
+                <li class="project-item">
+                    <div class="project-image"><img src="images/projects/artworkspage.JPG"></div>
+                    <div class="project-links">
+                        <a href="https://github.com/iCodeIX/art" target="_blank" class="source-code"><i
+                                class="fa-brands fa-github"></i>Source code</a>
+                        <a href="https://laurencetdg.netlify.app/" target="_blank" class="live-viewing">Live View</a>
+                    </div>
+                </li>
+                <li class="project-item">
+                    <div class="project-image"><img src="images/projects/inshape.JPG"></div>
+                    <div class="project-links">
+                        <a href="https://github.com/iCodeIX/shop" target="_blank" class="source-code"><i
+                                class="fa-brands fa-github"></i>Source code</a>
+                        <a href="https://inshape-store.netlify.app/" target="_blank" class="live-viewing">Live View</a>
+                    </div>
+                </li>
+                <li class="project-item">
+                    <div class="project-image"><img src="images/projects/winservices.JPG"></div>
+                    <div class="project-links">
+                        <a href="https://github.com/iCodeIX/personalservices" target="_blank" class="source-code"><i
+                                class="fa-brands fa-github"></i>Source code</a>
+                        <a href="https://win-services.netlify.app/" target="_blank" class="live-viewing">Live View</a>
+                    </div>
+                </li>
+                <li class="project-item">
+                    <div class="project-image"><img src="images/projects/todolist.JPG"></div>
+                    <div class="project-links">
+                        <a href="https://github.com/iCodeIX/todolist" target="_blank" class="source-code"><i
+                                class="fa-brands fa-github"></i>Source code</a>
+                        <a href="https://todo-list-now.netlify.app/" target="_blank" class="live-viewing">Live View</a>
+                    </div>
+                </li>
+                <li class="project-item">
+                    <div class="project-image"><img src="images/projects/foodcheck.JPG"></div>
+                    <div class="project-links">
+                        <a href="https://github.com/iCodeIX/foodcheck" target="_blank" class="source-code"><i
+                                class="fa-brands fa-github"></i>Source code</a>
+                        <a href="https://checkfood.netlify.app/" target="_blank" class="live-viewing">Live View</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="section contacts" id="contacts">
+            <div class="spacer"></div>
+            <div class="section-title">Have a conversation?</div>
+            <div class="send-email-container">
+                <p class="send-us-label">Send me a message</p>
+                <form class="form-container" name="contact" method="POST" data-netlify="true">
+                    <div class="input-wrapper">
+                        <input type="text" placeholder="Fullname" name="name">
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="email" placeholder="Email" name="email">
+                    </div>
+                    <div class="input-wrapper">
+                        <textarea rows="5" cols="10" name="message" placeholder="Write your message"></textarea>
+                    </div>
+                    <button type="submit" class="send-btn">SEND MESSAGE</button>
+                </form>
+            </div>
+
+            <ul class="contacts-list">
+                <li class="contact-item">
+                    <i class="contact-icon fa-solid fa-phone"></i>
+                    <p class="contact-detail">0928-385-1610</p>
+                </li>
+                <li class="contact-item">
+                    <i class="contact-icon fa-solid fa-envelope"></i>
+                    <p class="contact-detail">sherwincarlosph@gmail.com</p>
+                </li>
+                <li class="contact-item">
+                    <i class="contact-icon fa-brands fa-facebook"></i>
+                    <a class="contact-detail" href="https://www.facebook.com/Win.Karlos">www.facebook.com/Win.Karlos</p>
+                </li>
+            </ul>
+        </div>
+        <a href="#topContainer" class="go-top"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js"></script>
+<script src="script.js"></script>
+
 
 </html>
