@@ -39,6 +39,7 @@ li {
 
 .section {
     min-height: 100vh;
+    border: 1px solid white;
 
 }
 
@@ -75,12 +76,13 @@ svg {
     right: 0;
     left: 0;
     z-index: 999;
-    padding: 20px;
+    padding: 30px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     height: 50px;
     background: var(--var-bground);
+    border-bottom: 2px solid var(--var-text-gray);
 }
 
 .nav-list {
@@ -287,7 +289,7 @@ nav a {
 }
 
 .project-item {
-    width: 300px;
+    width: 250px;
     background: var(--var-text-gray);
     margin: 10px 10px 10px 0;
 
