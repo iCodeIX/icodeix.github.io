@@ -39,7 +39,6 @@ li {
 
 .section {
     min-height: 100vh;
-    border: 1px solid white;
     background: var(--var-bground);
 
 }
@@ -430,7 +429,7 @@ nav a {
 
 
     .nav-list {
-        display: flex;
+        display: flex!important;
         flex-direction: row;
         justify-content: space-around;
         opacity: 0.8;
@@ -500,7 +499,7 @@ nav a {
     }
 
     .go-top {
-        display: none;
+        display: none!important;
     }
 }
 
@@ -540,7 +539,7 @@ nav a {
     }
 
     .about-me-label {
-        font-size: 18px;
+        font-size: 25px;
     }
 
 

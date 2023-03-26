@@ -42,7 +42,12 @@ window.addEventListener("load", () => {
 
 
 
-
+    //close menu when link is clicked
+    document.querySelectorAll('.nav-item').forEach(link => {
+        link.addEventListener('click', () => {
+            closeMenu();
+        })
+    });
 
 
 
