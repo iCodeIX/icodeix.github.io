@@ -40,6 +40,7 @@ li {
 .section {
     min-height: 100vh;
     border: 1px solid white;
+    background: var(--var-bground);
 
 }
 
@@ -197,7 +198,6 @@ nav a {
 /*about me section */
 
 .about-me {
-    background: var(--var-bground);
     position: relative;
 
 }
@@ -210,7 +210,7 @@ nav a {
 }
 
 .hero-img-container img {
-    width: 37%;
+    width: 40%;
 }
 
 .hero-about-msg {
@@ -224,15 +224,11 @@ nav a {
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
+    line-height: 25px;
 
 }
 
 /* skills section */
-
-.skills {
-    background: var(--var-bground);
-
-}
 
 .skills-list {
     display: grid;
@@ -277,7 +273,6 @@ nav a {
 /* projects section */
 
 .projects {
-    background: var(--var-bground);
     min-height: 100vh;
 }
 
@@ -291,7 +286,7 @@ nav a {
 .project-item {
     width: 250px;
     background: var(--var-text-gray);
-    margin: 10px 10px 10px 0;
+    margin: 20px 10px;
 
 }
 
@@ -340,17 +335,13 @@ nav a {
 /* contacts section */
 
 
-.contacts {
-    background: var(--var-bground);
-}
-
 .send-us-label {
     color: var(--var-text-white);
+    margin: 10px 10px;
 }
 
 .send-email-container {
     width: auto;
-    padding: 10px;
 }
 
 .form-container {
@@ -377,7 +368,7 @@ nav a {
 .contact-item {
     display: flex;
     line-height: 25px;
-    padding: 5px;
+
 }
 
 .contact-icon {
@@ -487,6 +478,13 @@ nav a {
         line-height: 25px;
     }
 
+    .project-item {
+        width: 350px;
+        background: var(--var-text-gray);
+        margin: 20px 10px;
+    
+    }
+    
     .send-email-container {
 
         display: flex;
